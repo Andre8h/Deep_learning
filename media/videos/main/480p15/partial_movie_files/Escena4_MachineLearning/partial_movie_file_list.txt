@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena4_MachineLearning/1584795214_1624581343_223132457.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena4_MachineLearning/4072820271_1436597085_2103271631.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena4_MachineLearning/4072820271_2331504975_2824406134.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena4_MachineLearning/4072820271_1974388397_3955779421.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena4_MachineLearning/4072820271_253211766_3355716026.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena4_MachineLearning/4072820271_1358469278_3578740685.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena4_MachineLearning/4072820271_4166842112_1876708707.mp4'

@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/1584795214_2570103710_3649489210.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/4072820271_4071516364_729496473.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/4072820271_713595849_2367828051.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/4072820271_1523643215_660174389.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/4072820271_4277916559_1173094338.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/4072820271_96071537_2907173650.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/4072820271_4247107814_1807919344.mp4'
