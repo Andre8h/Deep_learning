@@ -3,31 +3,37 @@ from manim import *
 class Escena1_Definicion(Scene):
     def construct(self):
         # Título
-        titulo = Tex("El Producto Punto").scale(1.5).to_edge(UP)
-        subtitulo = Tex("La base matemática del Machine Learning").next_to(titulo, DOWN)
-        autor = Tex("Por Andres Quiñones").next_to(titulo,DOWN)
+        titulo = Tex("El Producto Punto").scale(1.5).to_edge(UP, buff=0.3)
+        subtitulo = Tex("La base matemática del Machine Learning").scale(1.2).next_to(titulo, DOWN)
+        autor = Tex("Por Andres Quiñones", color=GRAY).scale(1).next_to(subtitulo,DOWN)
         
-        self.play(Write(titulo), FadeIn(subtitulo), FadeOut(autor))
+        grupo_info = VGroup(titulo, subtitulo, autor)
+
+        self.play(FadeIn(grupo_info, shift=DOWN, scale=0.5), run_time=2)
         self.wait(1)
 
         # Ejes y vectores
-        ejes = Axes(x_range=[-1, 5], y_range=[-1, 4], x_length=6, y_length=5).shift(DOWN*1)
-        vec_a = Vector([3, 1], color=BLUE)
-        vec_b = Vector([2, 3], color=YELLOW)
+        ejes = Axes(
+                    x_range=[-1, 5], 
+                    y_range=[-1, 4], 
+                    x_length=6, 
+                    y_length=4,
+                    axis_config={"include_tip": True}
+                ).shift(DOWN*1.2)
+        origen = ejes.c2p(0, 0)
+        vec_a = Vector([2, 1], color=BLUE).shift(origen)
+        vec_b = Vector([2, 3], color=YELLOW).shift(origen)
         
-        etiqueta_a = MathTex(r"\vec{a}").next_to(vec_a.get_end(), RIGHT)
-        etiqueta_b = MathTex(r"\vec{b}").next_to(vec_b.get_end(), UP)
-
-        grupo_vectores = VGroup(ejes, vec_a, vec_b, etiqueta_a, etiqueta_b)
+        et_a = MathTex(r"\vec{a}").next_to(vec_a.get_end(), RIGHT, buff=0.1)
+        et_b = MathTex(r"\vec{b}").next_to(vec_b.get_end(), UP, buff=0.1)
 
         self.play(Create(ejes))
-        self.play(GrowArrow(vec_a), Write(etiqueta_a))
-        self.play(GrowArrow(vec_b), Write(etiqueta_b))
-        
-        formula = MathTex(r"\vec{a} \cdot \vec{b} = ?").scale(1.5).to_corner(DR)
-        self.play(Write(formula))
+        self.play(
+            GrowArrow(vec_a), Write(et_a),
+            GrowArrow(vec_b), Write(et_b),
+            run_time=2
+        )
         self.wait(2)
-
 
 class Escena2_Geometria(Scene):
     def construct(self):
