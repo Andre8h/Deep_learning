@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/1584795214_4033091958_223132457.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/4072820271_4071516364_2243934957.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/4072820271_2300641229_1125996772.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/4072820271_1067953272_645623898.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/Escena1_Definicion/4072820271_4247107814_3510949447.mp4'
