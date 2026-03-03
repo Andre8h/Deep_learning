@@ -40,28 +40,36 @@ class Escena2_Geometria(Scene):
         titulo = Tex("Interpretación: Similitud").to_edge(UP)
         self.play(Write(titulo))
 
-        ejes = Axes(x_range=[-1, 5], y_range=[-1, 4], x_length=6, y_length=5).shift(DOWN*0.5)
-        vec_a = Vector([4, 0], color=BLUE)
-        vec_b = Vector([3, 3], color=YELLOW)
+        ejes = Axes(
+                    x_range=[-1, 5], 
+                    y_range=[-1, 4], 
+                    x_length=6, 
+                    y_length=4,
+                    axis_config={"include_tip": True}
+                ).shift(DOWN*0.5)
+        origen = ejes.c2p(0, 0)
+
+        vec_a = Vector([3, 0], color=BLUE).shift(origen)
+        vec_b = Vector([3, 3], color=YELLOW).shift(origen)
         
         # Proyección (Línea punteada)
-        proyeccion = DashedLine(vec_b.get_end(), [3, 0, 0], color=WHITE)
-        vec_proy = Vector([3, 0], color=GREEN)
+        proyeccion = DashedLine(vec_b.get_end(), [1, -1.8, 0], color=WHITE)
         
         angulo = Angle(vec_a, vec_b, radius=0.8, color=RED)
-        theta = MathTex(r"\theta").next_to(angulo, UR, buff=0.1)
+        theta = MathTex(r"\theta").next_to(angulo, UR, buff=0.1).shift(origen, UP*1.3 + RIGHT*2)
 
         self.play(Create(ejes), GrowArrow(vec_a), GrowArrow(vec_b))
         self.play(Create(angulo), Write(theta))
         self.wait(1)
 
         self.play(Create(proyeccion))
-        self.play(GrowArrow(vec_proy))
         
-        explicacion = Tex("Mide qué tan ``alineados'' están dos vectores.").scale(0.8).to_edge(DOWN)
-        formula = MathTex(r"\vec{a} \cdot \vec{b} = |\vec{a}| |\vec{b}| \cos(\theta)").to_corner(UR)
+        explicacion = Tex("Mide qué tan ``similares'' son dos vectores.").scale(0.5).to_edge(DOWN).shift(UP*0.6)
+        explicacion2 = Tex("Usando el angulo que existe entre estos dos como valor de similaridad").scale(0.5).next_to(explicacion,DOWN).shift(UP*0.2)
+
+        formula = MathTex(r"\vec{a} \cdot \vec{b} = |\vec{a}| |\vec{b}| \cos(\theta)").next_to(titulo, DOWN)
         
-        self.play(Write(explicacion), Write(formula))
+        self.play(Write(explicacion),Write(explicacion2), Write(formula))
         self.wait(2)
 
 
