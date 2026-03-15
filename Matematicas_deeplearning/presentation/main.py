@@ -7,7 +7,7 @@ Mobject.set_default(color=BLACK)
 class ProductoPuntoML(Scene):
     def construct(self):
         # --- ESCENA 1: Introducción ---
-        titulo = Tex("El Producto Punto").scale(1.5).to_edge(UP, buff=0.5)
+        titulo = Tex("El Producto Punto en el modelado 3D").scale(1.5).to_edge(UP, buff=0.5)
         subtitulo = Tex("La base matemática del Machine Learning").scale(1.1).next_to(titulo, DOWN)
         autor = Tex("Por Andres Quiñones", color=GRAY).scale(0.8).next_to(subtitulo, DOWN)
         
@@ -126,3 +126,59 @@ class ProductoPuntoML(Scene):
         
         # Cierre final
         self.play(FadeOut(*self.mobjects))
+
+
+class ProductoPuntoMultimedia(Scene):
+    def construct(self):
+        # === 1. TÍTULO ===
+        titulo = Tex("Aplicación en Ing. Multimedia").scale(1.2).to_edge(UP)
+        subtitulo = Tex("Iluminación en Gráficos 3D (Shading)", color=GRAY).next_to(titulo, DOWN)
+        
+        self.play(Write(titulo), FadeIn(subtitulo, shift=UP))
+        self.wait(1)
+
+        # === 2. DIBUJANDO LA SUPERFICIE Y VECTORES ===
+        # Representamos un fragmento de un modelo 3D (una línea)
+        origen = DOWN * 1.5
+        superficie = Line(LEFT*3, RIGHT*3, stroke_width=6).shift(origen)
+        et_superficie = Tex("Superficie del objeto").scale(0.7).next_to(superficie, LEFT)
+
+        # Vector Normal (Apunta hacia arriba, perpendicular a la superficie)
+        vec_n = Vector([0, 2.5], color=BLUE).shift(origen)
+        et_n = MathTex(r"\vec{n} \text{ (Normal)}", color=BLUE).next_to(vec_n.get_end(), UP)
+
+        # Vector de Luz (Viene en un ángulo)
+        # Usamos YELLOW_D (amarillo oscuro) para que se vea bien en fondo blanco
+        vec_l = Vector([2, 2], color=YELLOW_D).shift(origen)
+        et_l = MathTex(r"\vec{l} \text{ (Luz)}", color=YELLOW_D).next_to(vec_l.get_end(), RIGHT)
+
+        self.play(Create(superficie), Write(et_superficie))
+        self.play(GrowArrow(vec_n), Write(et_n))
+        self.play(GrowArrow(vec_l), Write(et_l))
+
+        # === 3. EL ÁNGULO Y LA MATEMÁTICA ===
+        # Mostramos el ángulo entre la normal y la luz
+        angulo = Angle(vec_n, vec_l, radius=0.8, color=RED)
+        theta = MathTex(r"\theta", color=RED).move_to(
+            Angle(vec_n, vec_l, radius=1.2).point_from_proportion(0.5)
+        )
+
+        self.play(Create(angulo), Write(theta))
+        self.wait(1)
+
+        # Fórmula de la intensidad de luz
+        formula_luz = MathTex(
+            r"\text{Intensidad} = \vec{n} \cdot \vec{l} = \cos(\theta)"
+        ).scale(1.1).shift(UP * 0.5 + LEFT * 10).next_to(theta,DOWN + LEFT)
+        
+        explicacion = Tex(
+            r"Si $\theta = 0^{\circ}$, la luz pega de frente (brillo máximo)."
+        ).scale(0.7).next_to(formula_luz, RIGHT)
+
+        self.play(Write(formula_luz))
+        self.play(FadeIn(explicacion))
+        self.wait(3)
+
+        # === 4. LIMPIEZA TOTAL PARA LA SIGUIENTE ESCENA ===
+        self.play(FadeOut(*self.mobjects))
+        self.wait(1)

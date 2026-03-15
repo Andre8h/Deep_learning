@@ -1,0 +1,13 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/793938918_2813621707_223132457.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/2791924351_3325249961_2757094246.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/2791924351_1386434341_218296617.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/2791924351_2578204774_3931532212.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/2791924351_296956182_2413721001.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/2791924351_2421995694_606477023.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/2791924351_3325249961_3946316267.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/2791924351_1073186992_2000659552.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/2791924351_1923216783_2473292235.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/2791924351_3435255397_1733637153.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/2791924351_2841877167_2358810818.mp4'
+file 'file:C:/Users/ANDRES QUIÑONEZ/Desktop/UTB/2026 - 1/DEEP LEARNING/Math for DL/Matematicas_deeplearning/media/videos/main/480p15/partial_movie_files/ProductoPuntoMultimedia/2791924351_3325249961_631829896.mp4'
